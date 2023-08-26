@@ -1,3 +1,6 @@
+@import url(css/navbar.css);
+@import url(css/section1.css);
+
 /* This project is done mobile first */
 * {
     box-sizing: border-box;
@@ -10,78 +13,5 @@ body {
 }
 
 :root {
-    --base-color: #16A34A;
-}
-
-/* START OF NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: .75rem;
-}
-
-.brand-name {
-    color: var(--base-color);
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.toggle-button {
-    display: flex;
-    position: absolute;
-    right: 1rem;
-    top: 1.2rem;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 15px;
-    width: 20px;
-}
-
-.toggle-button span {
-    background-color: black;
-    width: 100%;
-    height: 2px;
-    border-radius: 2px;
-}
-/* END OF NAVBAR */
-
-/* START OF MAIN BODY */
-/* SECTION 1 */
-.section1 {
-    /* height: fit-content; */
-    height: 100vh;
-}
-
-.riceFarmContainer{
-    background-image: url(assets/rice-farm.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 100%;
-}
-
-.welcomeCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-.welcomeCard h1 {
-    text-transform: uppercase;
-    color: var(--base-color);
-}
-/* END OF MAIN BODY */
-
-/* for bigger devices */
-@media (min-width: 600px) {
-    .toggle-button {
-        display: none;
-    }
+    --base-color: #09bd4b;
 }
