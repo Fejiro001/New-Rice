@@ -1,7 +1,7 @@
 @import url(css/navbar.css);
 @import url(css/section1.css);
 @import url(css/section2.css);
-
+@import url(css/section3.css);
 /* This project is done mobile first */
 * {
     box-sizing: border-box;
