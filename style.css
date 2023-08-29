@@ -130,11 +130,12 @@ p {
 .shopNowBtn {
     background-color: var(--main-color);
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     border: none;
     padding: 1rem 2rem;
     color: white;
+    letter-spacing: .1rem;
 }
 
 /* END OF SECTION 1 */
@@ -143,19 +144,22 @@ p {
 .section2 {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    align-items: center;
+    height: fit-content;
     width: 100%;
-    padding: 4rem;
+    padding: 3rem 2rem;
 }
 
 .part1 {
     flex: 50%;
+    padding: 1rem 2rem;
     /* width: 80%; */
 }
 
 .part2 {
     flex: 50%;
-    padding: 4rem;
+    padding: 1rem 2rem;
+    /* margin: 4rem; */
 }
 .part2 h1 {
     border-bottom: var(--main-color) 8px solid;
@@ -164,6 +168,7 @@ p {
 .aboutUs {
     display: flex;
     flex-direction: row;
+    margin-bottom: 1rem;
 }
 .process {
     margin: 2rem 2rem 0 0;
@@ -183,6 +188,18 @@ p {
 }
 /* END OF SECTION 2 */
 
+
+
+@media (max-width: 800px) {
+    .section2 {
+        flex-direction: column;
+    }
+
+    .part1 .part2 {
+        flex: 100%;
+    }
+}
+
 @media (max-width: 800px) {
     .welcomeCard p {
         font-size: 1.2rem;
@@ -192,7 +209,6 @@ p {
     }
 }
 
-/* for bigger devices */
 @media (max-width: 800px) {
     .toggle-button {
         display: flex;
