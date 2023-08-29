@@ -11,6 +11,21 @@ body {
 :root {
     --base-color: #09bd4b;
 }
+
+.medium {
+    color: var(--base-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.large {
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    /* width: fit-content; */
+}
+
 /* START OF NAVBAR */
 .navbar {
     display: flex;
@@ -104,6 +119,12 @@ body {
 }
 
 /* END OF SECTION 1 */
+
+/* START OF SECTION 2 */
+.part2 {
+    padding: 2rem;
+}
+/* END OF SECTION 2 */
 
 @media (max-width: 600px) {
     .welcomeCard p {
