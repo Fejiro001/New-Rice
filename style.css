@@ -1,29 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Heebo', sans-serif;
 }
 
 :root {
-    --base-color: #09bd4b;
+    --main-color: #09bd4b;
+    --base-color: #6b7280;
+}
+
+/* general styling */
+.small {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 1rem 0;
+    letter-spacing: .1rem;
 }
 
 .medium {
-    color: var(--base-color);
-    font-size: 1rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .large {
     color: black;
     font-size: 2rem;
     text-transform: capitalize;
-    font-weight: bolder;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
     /* width: fit-content; */
+}
+
+p {
+    color: var(--base-color);
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 /* START OF NAVBAR */
@@ -36,7 +56,7 @@ body {
 }
 
 .brand-name {
-    color: var(--base-color);
+    color: var(--main-color);
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -62,7 +82,6 @@ body {
 
 /* START OF SECTION 1 */
 .section1 {
-    /* height: fit-content; */
     height: 100vh;
 }
 
@@ -91,7 +110,7 @@ body {
 
 .welcomeCard h1 {
     text-transform: uppercase;
-    color: var(--base-color);
+    color: var(--main-color);
     font-size: 2.5rem;
     margin: 0;
 }
@@ -109,7 +128,7 @@ body {
 }
 
 .shopNowBtn {
-    background-color: var(--base-color);
+    background-color: var(--main-color);
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 600;
@@ -121,12 +140,50 @@ body {
 /* END OF SECTION 1 */
 
 /* START OF SECTION 2 */
+.section2 {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    padding: 4rem;
+}
+
+.part1 {
+    flex: 50%;
+    /* width: 80%; */
+}
+
 .part2 {
-    padding: 2rem;
+    flex: 50%;
+    padding: 4rem;
+}
+.part2 h1 {
+    border-bottom: var(--main-color) 8px solid;
+    line-height: 1.2em;
+}
+.aboutUs {
+    display: flex;
+    flex-direction: row;
+}
+.process {
+    margin: 2rem 2rem 0 0;
+}
+.icon {
+    display: flex;
+    background-color: red;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.aboutIcon {
+    width: 2rem;
 }
 /* END OF SECTION 2 */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .welcomeCard p {
         font-size: 1.2rem;
     }
@@ -136,7 +193,7 @@ body {
 }
 
 /* for bigger devices */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .toggle-button {
         display: flex;
     }
