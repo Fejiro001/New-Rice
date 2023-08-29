@@ -1,8 +1,3 @@
-@import url(css/navbar.css);
-@import url(css/section1.css);
-@import url(css/section2.css);
-@import url(css/section3.css);
-/* This project is done mobile first */
 * {
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,4 +10,113 @@ body {
 
 :root {
     --base-color: #09bd4b;
+}
+/* START OF NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: .75rem;
+}
+
+.brand-name {
+    color: var(--base-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.toggle-button {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15px;
+    width: 20px;
+}
+
+.toggle-button span {
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+}
+/* END OF NAVBAR */
+
+/* START OF SECTION 1 */
+.section1 {
+    /* height: fit-content; */
+    height: 100vh;
+}
+
+.riceFarmContainer{
+    background-image: linear-gradient(rgba(0,0,0,0.5), 
+    rgba(0,0,0,0.5)), url(/assets/rice-farm.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.welcomeCard {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.welcomeCard h1 {
+    text-transform: uppercase;
+    color: var(--base-color);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.welcomeCard h2 {
+    color: white;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.welcomeCard p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.shopNowBtn {
+    background-color: var(--base-color);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+/* END OF SECTION 1 */
+
+@media (max-width: 600px) {
+    .welcomeCard p {
+        font-size: 1.2rem;
+    }
+    .riceFarmContainer {
+        background-attachment: scroll;
+    }
+}
+
+/* for bigger devices */
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
 }
